@@ -1,0 +1,63 @@
+/* styles/components/TextPage.css */
+.text-page-container {
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(160deg, #f0f5ff 0%, #f8fafc 100%);
+  }
+  
+  .text-page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .text-page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #cbd5e1;
+  }
+  
+  .text-analysis-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(30, 58, 138, 0.05);
+  }
+  
+  .sentiment-display {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+  
+  .keyword-pill {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0ea5e9;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin: 0.2rem;
+  }
+  
+  .text-input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    min-height: 150px;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .text-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+  }

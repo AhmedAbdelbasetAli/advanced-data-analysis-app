@@ -1,0 +1,75 @@
+.text-input-container {
+    padding: 2rem;
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .text-input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .text-input-area {
+    width: 100%;
+    padding: 1rem;
+    background: #334155;
+    color: #f8fafc;
+    border: 1px solid #475569;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    resize: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .text-input-area:focus {
+    outline: none;
+    border-color: #60a5fa;
+  }
+  
+  .text-input-button {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .text-input-button:hover {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+  }
+  
+  .text-input-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .spinner {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
