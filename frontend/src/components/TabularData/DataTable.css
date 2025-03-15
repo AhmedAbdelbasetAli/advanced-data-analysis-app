@@ -1,0 +1,50 @@
+.data-table {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.data-table h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.data-table ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.data-table li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.data-table button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+}
+
+.data-table button:hover {
+  background-color: #218838;
+}
+
+.data-table button.delete {
+  background-color: #dc3545;
+}
+
+.data-table button.delete:hover {
+  background-color: #c82333;
+}

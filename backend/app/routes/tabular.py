@@ -8,7 +8,7 @@ from bson import ObjectId
 from datetime import datetime
 import json
 
-bp = Blueprint('tabular', __name__, url_prefix='/api/tabular')
+bp = Blueprint('tabular', __name__, url_prefix='/tabular')
 ALLOWED_EXTENSIONS = {'csv', 'xlsx'}
 
 def allowed_file(filename):
