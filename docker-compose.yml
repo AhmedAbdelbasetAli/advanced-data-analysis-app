@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/advanced_analysis
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  mongodb:
+    image: mongo:6.0
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=advanced_analysis
+    networks:
+      - app-network
+    ports:
+      - "27017:27017"
+
+volumes:
+  mongodb_data:
+
+networks:
+  app-network:
+    driver: bridge
